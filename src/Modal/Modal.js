@@ -7,7 +7,7 @@ export default class Modal extends React.Component {
     }
     render() {
         return (
-            <React.Fragment>
+            <>
                 <button onClick={()=>this.setState({isOpen:true})}>Open modal</button>
                 {this.state.isOpen && (<div className='modal'>
                     <div className='modal-body'>
@@ -16,7 +16,7 @@ export default class Modal extends React.Component {
                         <button onClick={()=>this.setState({isOpen:false})}>Close modal</button>
                     </div>
                 </div>)}
-            </React.Fragment>
+            </>
         )
     }
 }
